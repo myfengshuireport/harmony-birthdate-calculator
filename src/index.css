@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover-foreground: 0 0% 12%;
 
     /* Chinese red and gold theme */
-    --primary: 0 84% 60%;
+    --primary: 0 84% 45%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 45 93% 47%;
@@ -35,12 +35,12 @@ All colors MUST be HSL.
 
     --border: 20 25% 85%;
     --input: 20 25% 85%;
-    --ring: 0 84% 60%;
+    --ring: 0 84% 45%;
 
     /* Feng shui prosperity colors */
-    --prosperity-red: 0 84% 60%;
+    --prosperity-red: 0 84% 45%;
     --prosperity-gold: 45 93% 47%;
-    --wealth-gradient: linear-gradient(135deg, hsl(0 84% 60%), hsl(45 93% 47%));
+    --wealth-gradient: linear-gradient(135deg, hsl(0 84% 45%), hsl(45 93% 47%));
     --subtle-pattern: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='hsl(45 93% 47% / 0.05)' fill-rule='evenodd'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
 
     --radius: 0.75rem;
