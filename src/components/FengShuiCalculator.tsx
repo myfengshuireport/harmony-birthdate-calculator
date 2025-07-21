@@ -9,6 +9,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
+import AnimatedBackground from "./AnimatedBackground";
 
 const FengShuiCalculator = () => {
   const [selectedDate, setSelectedDate] = useState<Date>();
@@ -80,12 +81,9 @@ const FengShuiCalculator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background relative">
-      {/* Background Pattern */}
-      <div 
-        className="absolute inset-0 opacity-30 bg-subtle-pattern bg-repeat"
-        style={{ backgroundSize: '200px 200px' }}
-      />
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Animated Background */}
+      <AnimatedBackground />
       
       <div className="relative z-10 pt-24 pb-16">
         <div className="container mx-auto px-6">
@@ -107,16 +105,16 @@ const FengShuiCalculator = () => {
                     <Button
                       variant="outline"
                       className={cn(
-                        "w-full h-14 justify-start text-left font-normal text-lg px-6",
+                        "w-full h-14 justify-between text-left font-normal text-lg px-6",
                         !selectedDate && "text-muted-foreground"
                       )}
                     >
-                      <CalendarIcon className="mr-3 h-5 w-5" />
                       {selectedDate ? (
                         format(selectedDate, "PPP")
                       ) : (
                         <span>Enter your birthdate to start</span>
                       )}
+                      <CalendarIcon className="ml-3 h-5 w-5" />
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-auto p-0" align="start">
